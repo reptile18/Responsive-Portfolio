@@ -4,7 +4,7 @@ Simple demonstration of a responsive portolio website using Bootstrap.
 
 ## Getting Started
 
-No backend, so simply download the files.
+Simply download the files.
 
 ### Prerequisites
 
