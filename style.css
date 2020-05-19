@@ -1,7 +1,11 @@
 .card-img-top {
-  /*height: 10em;*/
+  height: 10em;
 }
 .card-img-container {
-  height: 10em;
-  background-color: #333;
+  height: 15em;
+  background-color: #111;
+}
+
+.card-radius {
+  border-radius: 5px;
 }
