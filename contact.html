@@ -1,63 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <title>Contact</title>
-    </head>
-    <body class="bg-dark">
-        <header>
-            <div class="d-flex justify-content-center">
-                <h1 class="bg-dark text-light">Johnny Li</h1>
-            </div>
-        </header>
-        <nav class="nav navbar-light bg-light justify-content-center"> 
-            <a class="nav-link text-dark" href="index.html">About Me</a>
-            <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
-            <a class="nav-link text-dark" href="contact.html">Contact</a>
-        </nav>
-        <main class="container">
-            <article class="card mt-4">
-                <div class="card-body">
-                    <div class="row"> 
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="https://use.fontawesome.com/0d608d6dda.js"></script>
+</head>
+
+<body class="bg-dark">
+    <header>
+        <div class="d-flex justify-content-center">
+            <h1 class="bg-dark text-light">Johnny Li</h1>
+        </div>
+    </header>
+    <nav class="nav navbar-light bg-light justify-content-center">
+        <a class="nav-link text-dark" href="index.html">About Me</a>
+        <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+        <a class="nav-link text-dark" href="contact.html">Contact</a>
+    </nav>
+    <main class="container">
+        <article class="card mt-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-dark card-title">Contact</h2>
+                        <hr>
+                    </div>
+                </div>
+                <form>
+                    <div class="row form-group">
                         <div class="col-lg-12">
-                            <h2 class="text-dark card-title">Contact</h2>
-                            <hr>
+                            <label for="inName">Name</label>
+                            <input type="text" class="form-control" id="inName" placeholder="John Smith">
                         </div>
                     </div>
-                    <form>
-                        <div class="row form-group">
-                            <div class="col-lg-12">
-                                <label for="inName">Name</label>
-                                <input type="text" class="form-control" id="inName" placeholder="John Smith">
-                            </div>
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <label for="inEmail">Email</label>
+                            <input type="email" class="form-control" id="inEmail" aria-describedby="emailHelp"
+                                placeholder="example@gmail.com">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
                         </div>
-                        <div class="row form-group">
-                            <div class="col-lg-12">
-                                <label for="inEmail">Email</label>
-                                <input type="email" class="form-control" id="inEmail" aria-describedby="emailHelp" placeholder="example@gmail.com">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <label for="inMessage">Message</label>
+                            <textarea class="form-control" id="inMessage"></textarea>
                         </div>
-                        <div class="row form-group">
-                            <div class="col-lg-12">
-                                <label for="inMessage">Message</label>
-                                <textarea class="form-control" id="inMessage"></textarea>
-                            </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <input class="btn btn-primary" type="submit" value="Submit">
                         </div>
-                        <div class="row form-group">
-                            <div class="col-lg-12">
-                                <input class="btn btn-primary" type="submit" value="Submit">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </article>
-        </main>
-        <footer class="fixed-bottom page-footer bg-light text-dark font-small ">
-            <div class="footer-copyright text-center py-3">© Copyright</div>
-        </footer>
-    </body>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer class="fixed-bottom page-footer bg-light text-dark font-small ">
+        <div class="d-flex justify-content-center">
+            <h3 class="mt-3">
+                <a class="mr-3" href="https://github.com/reptile18">
+                    <i class="fab fa-github-square text-dark"></i>
+                </a>
+
+                <a class="mr-3" href="https://www.linkedin.com/in/johnny-li-031b949/">
+                    <i class="fab fa-linkedin-square text-dark"></i>
+                </a>
+
+                <a class="mr-3" href="https://www.facebook.com/johnny.li.144">
+                    <i class="fab fa-facebook-square text-dark"></i>
+                </a>
+
+                <a class="mr-3" href="https://twitter.com/hotreptile18">
+                    <i class="fab fa-twitter-square text-dark"></i>
+                </a>
+
+                <a class="mr-3" href="https://www.instagram.com/johnnyli8004/">
+                    <!--<i class="fab fa-instagram-square text-dark"></i>-->
+                    <!-- this icon doesn't seem to be available yet -->
+                    <i class="fab fa-instagram text-dark"></i>
+                </a>
+            </h3>
+        </div>
+        <div class="footer-copyright text-center py-3">© Copyright</div>
+    </footer>
+</body>
+
 </html>
