@@ -6,6 +6,88 @@
   width: 100%;
 }
 
-.card-radius {
-  border-radius: 5px;
+.card-top-radius {
+  border-radius: 5px 5px 0 0 ;
+  border: 1px dashed #F1E9DA;
+  border-bottom: none;
+}
+
+.card-bottom-radius {
+  border-radius: 0 0 5px 5px;
+  border: 1px dashed #F1E9DA;
+  border-top: none;
+}
+
+.pageBar {
+  background-color: #3A1772;
+  color: #F1E9DA;
+}
+
+.pageBar a {
+  color: #F1E9DA;
+}
+
+.mainCard {
+  background-color: rgba(0,0,0,0);
+  color: #F1E9DA;
+
+}
+
+.miniCard {
+  background-color: #3A1772;
+  color: #F1E9DA;
+}
+
+.miniCard a {
+  color: #F1E9DA;
+}
+
+.codingBackground {
+  background-image: url("./Assets/Images/codingbackground.png");
+}
+
+.btn-bg-0 {
+  background-color: #A22C29;
+}
+
+.btn-bg-1 {
+  background-color: #FF8427;
+}
+
+.btn-bg-2 {
+  background-color: #FFC800;
+}
+
+.btn-bg-3 {
+  background-color: #4D8B31;
+}
+
+.btn-bg-4 {
+  background-color: #3185FC;
+}
+
+.btn-bg-5 {
+  background-color: indigo;
+  border: 1px solid #F1E9DA;
+  color: #F1E9DA;
+}
+
+.btn-bg-6 {
+  background-color: magenta;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-bullets li {
+  line-height: 2em;
+}
+
+footer {
+  border-top: 1px solid #F1E9DA;
+}
+
+nav {
+  border-bottom: 1px solid #F1E9DA;
 }

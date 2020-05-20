@@ -15,92 +15,243 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity=""
         crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>About Me</title>
 </head>
 
-<body class="bg-dark">
-    <header>
+<body class="codingBackground">
+    <header class="pageBar">
         <div class="d-flex justify-content-center">
-            <h1 class="bg-dark text-light">Johnny Li</h1>
+            <h1 class="py-1">Johnny Li</h1>
         </div>
     </header>
-    <nav class="nav navbar-light bg-light justify-content-center">
-        <a class="nav-link text-dark" href="index.html">About Me</a>
-        <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
-        <a class="nav-link text-dark" href="contact.html">Contact</a>
+    <nav class="pageBar font-weight-bold nav justify-content-center">
+        <a class="nav-link " href="index.html">About Me</a>
+        <a class="nav-link " href="portfolio.html">Portfolio</a>
+        <a class="nav-link " href="contact.html">Contact</a>
     </nav>
     <main class="container">
-        <article class="card mt-4">
+        <article class="card mt-4 mainCard">
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-dark card-title">About Me</h2>
+                        <h2 class="card-title">About Me</h2>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <img src="Assets/Images/portrait.jpg" class="img-fluid" alt="my photo">
-                    </div>
-                    <div class="mt-3 col-lg-12 text-dark">
-                        I'm a software developer. I'm fluent in HTML/CSS, Javascript, Intersystems Caché, VB6, and
-                        GDScript. My education was mostly in Java with some C++ and Python thrown in. I learn new 
-                        technologies very quickly, I'm very driven, I'm very good and finding and fixing bugs, 
-                        I'm extremely flexible, and I don't give up until everything is in tip-tip shape.
-                    </div>
-                    <div class="mt-3 col-lg-12 text-dark">
-                        I'm gay, vegan, father to two cats, and a board game enthusiast.
-                    </div>
-                    <div class="mt-3 text-dark">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="./Assets/Files/Resume.web.pdf" class="nav-link"><i class="fas fa-file text-dark"></i> View my
-                                    resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="mailto:reptile18@gmail.com" class="nav-link"><i class="fas fa-envelope text-dark"></i> Email
-                                    Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="tel:619-564-1623" class="nav-link"><i class="fas fa-phone text-dark"></i> Call Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-
+                    <div class="col-lg-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class=" col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard ">
+                                        <div class=" p-4">
+                                            <h3 class="card-title ">Skills</h3>
+                                            <h6 class="card-subtitle ">My knowledge</h6>
+                                        </div>
+                                        <div class="card-img-container d-flex justify-content-center ">
+                                            <img src="Assets/Images/rainbowbrain.png" class="card-img-top"
+                                                alt="screenshot">
+                                        </div>
+                                    </div>
+                                    <div id="skillsSection" class="card-body miniCard card-bottom-radius">
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard">
+                                        <div class=" p-4">
+                                            <h3 class="card-title ">Strengths</h3>
+                                            <h6 class="card-subtitle ">My stats</h6>
+                                        </div>
+                                        <div class="card-img-container d-flex justify-content-center ">
+                                            <img src="Assets/Images/kennyonlaptop.png" class="card-img-top"
+                                                alt="screenshot">
+                                        </div>
+                                    </div>
+                                    <div id="statsSection" class="card-body miniCard card-bottom-radius">
+                                        <ul class="no-bullets">
+                                            <li class="py-2"><i class="fas fa-bolt fa-2x"></i><span class="px-3">learns quickly</span></li>
+                                            <li class="py-2"><i class="fas fa-users fa-2x"></i><span class="px-3">team player</span></li>
+                                            <li class="py-2"><i class="fas fa-code-branch fa-2x"></i><span class="px-3">incredibly driven</span></li>
+                                            <li class="py-2"><i class="fas fa-bug fa-2x"></i><span class="px-3">expert bug investigator & fixer</span></li>
+                                            <li class="py-2"><i class="fas fa-globe fa-2x"></i><span class="px-3">extremely flexible</span></li>
+                                            <li class="py-2"><i class="fas fa-briefcase fa-2x"></i><span class="px-3">doesn't give up until everything looks good</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard">
+                                        <div class=" p-4">
+                                            <h3 class="card-title ">Personality</h3>
+                                            <h6 class="card-subtitle ">What makes me special</h6>
+                                        </div>
+                                        <div class="card-img-container d-flex justify-content-center ">
+                                            <img src="Assets/Images/portrait2.jpg" class="card-img-top"
+                                                alt="screenshot">
+                                        </div>
+                                    </div>
+                                    <div id="statsSection" class="card-body miniCard card-bottom-radius">
+                                        <ul class="no-bullets">
+                                            <li class="py-2"><i class="fas fa-heart fa-2x"></i><span class="px-3">L<span class="text-success font-weight-bold">G</span>BT</span></li>
+                                            <li class="py-2"><i class="fas fa-leaf fa-2x"></i><span class="px-3">longtime vegan</span></li>
+                                            <li class="py-2"><i class="fas fa-cat fa-2x"></i><span class="px-3">cat <span class="badge badge-light">2</span> herder</span></li>
+                                            <li class="py-2"><i class="fas fa-running fa-2x"></i><span class="px-3">extremely flexible</span></li>
+                                            <li class="py-2"><i class="fas fa-dice-five fa-2x"></i><span class="px-3">board game fanatic</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard">
+                                        <div class=" p-4">
+                                            <h3 class="card-title ">Contact</h3>
+                                            <h6 class="card-subtitle ">How to get in touch with me</h6>
+                                        </div>
+                                        <div class="card-img-container d-flex justify-content-center ">
+                                            <img src="Assets/Images/portrait.jpg" class="card-img-top"
+                                                alt="screenshot">
+                                        </div>
+                                    </div>
+                                    <div id="statsSection" class="card-body miniCard card-bottom-radius">
+                                        <div class="mt-3 ">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                    <a href="./Assets/Files/Resume.web.pdf" class="nav-link"><i
+                                                            class="fas fa-file "></i> View my
+                                                        resume</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="mailto:reptile18@gmail.com" class="nav-link"><i
+                                                            class="fas fa-envelope "></i> Email
+                                                        Me</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="tel:619-564-1623" class="nav-link"><i class="fas fa-phone "></i> Call
+                                                        Me</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-5">.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div> <!-- card body-->
         </article> <!-- card -->
     </main>
-    <footer class="fixed-bottom page-footer bg-light text-dark font-small ">
+    <footer class="pageBar fixed-bottom page-footer font-small ">
         <div class="d-flex justify-content-center">
             <h3 class="mt-3">
                 <a class="mr-3" href="https://github.com/reptile18">
-                    <i class="fab fa-github-square text-dark"></i>
+                    <i class="fab fa-github-square "></i>
                 </a>
 
                 <a class="mr-3" href="https://www.linkedin.com/in/johnny-li-031b949/">
-                    <i class="fab fa-linkedin text-dark"></i>
+                    <i class="fab fa-linkedin "></i>
                 </a>
 
                 <a class="mr-3" href="https://www.facebook.com/johnny.li.144">
-                    <i class="fab fa-facebook-square text-dark"></i>
+                    <i class="fab fa-facebook-square "></i>
                 </a>
 
                 <a class="mr-3" href="https://twitter.com/hotreptile18">
-                    <i class="fab fa-twitter-square text-dark"></i>
+                    <i class="fab fa-twitter-square "></i>
                 </a>
 
                 <a class="mr-3" href="https://www.instagram.com/johnnyli8004/">
-                    <i class="fab fa-instagram-square text-dark"></i>
+                    <i class="fab fa-instagram-square "></i>
                 </a>
             </h3>
         </div>
         <hr>
         <div class="footer-copyright text-center py-1">© Copyright</div>
     </footer>
+    <script type="text/Javascript">
+$(document).ready(function () {
+var skills = [
+    {
+        skill: "HTML5",
+        level: 5
+    },
+    {
+        skill: "CSS",
+        level: 5
+    },
+    {
+        skill: "Javascript",
+        level: 5
+    },
+    {
+        skill: "Bootstrap",
+        level: 3
+    },
+    {
+        skill: "Foundation",
+        level: 3
+    },
+    {
+        skill: "JQuery",
+        level: 5
+    },
+    {
+        skill: "ES6",
+        level: 3
+    },
+    {
+        skill: "Java",
+        level: 4
+    },
+    {
+        skill: "Caché",
+        level: 4
+    },
+    {
+        skill: "VB6",
+        level: 3
+    },
+    {
+        skill: "C#",
+        level: 3
+    },
+    {
+        skill: "Node.js",
+        level: 2
+    },
+    {
+        skill: "React.js",
+        level: 1
+    },
+    {
+        skill: "Vue.js",
+        level: 2
+    },
+    {
+        skill: "Python",
+        level: 1
+    },
+    {
+        skill: "GDScript",
+        level: 4
+    },
+    {
+        skill: "C++",
+        level: 1
+    }
+]
+
+function populateSkills() {
+    $.each(skills,(index,value) => {
+        let spanSkill = $("<span>").addClass("mx-1 my-1 btn btn-bg-" + index%7).text(value.skill);
+        $("#skillsSection").append(spanSkill);
+    });
+}
+populateSkills();
+
+});
+    </script>
 </body>
 
 </html>
