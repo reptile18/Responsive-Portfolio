@@ -1,9 +1,9 @@
 .card-img-top {
-  height: 10em;
+  max-height: 10em;
+  width: auto
 }
 .card-img-container {
-  height: 15em;
-  background-color: #111;
+  width: 100%;
 }
 
 .card-radius {
