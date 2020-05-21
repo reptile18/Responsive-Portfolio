@@ -92,3 +92,7 @@ footer {
 nav {
   border-bottom: 1px solid #F1E9DA;
 }
+
+.prettyFont {
+  font-family: 'Permanent Marker', cursive;
+}

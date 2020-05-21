@@ -23,26 +23,26 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
     <link rel="stylesheet" href="./style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>About Me</title>
 </head>
 
 <body class="codingBackground">
     <header class="pageBar">
         <div class="d-flex justify-content-center">
-            <h1 class="py-1">Johnny Li</h1>
+            <h1 class="py-1 prettyFont">Johnny Li</h1>
         </div>
     </header>
     <nav class="pageBar font-weight-bold nav justify-content-center">
-        <a class="nav-link " href="about.html">About Me</a>
-        <a class="nav-link " href="index.html">Portfolio</a>
+        <a class="nav-link prettyFont" href="about.html">About Me</a>
+        <a class="nav-link prettyFont" href="index.html">Portfolio</a>
     </nav>
     <main class="container">
         <article class="card mt-4 mainCard">
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="card-title">About Me</h2>
+                        <h2 class="prettyFont card-title">About Me</h2>
                         <hr>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                     <div class="col-lg-12">
                         <div class="container">
                             <div class="row">
-                                <div class=" col-lg-6 mb-5">
-                                    <div class="card-top-radius miniCard animated fadeIn">
+                                <div class=" wow fadeInUp col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard">
                                         <div class=" p-4">
                                             <h3 class="card-title ">Skills</h3>
                                             <h6 class="card-subtitle ">My knowledge</h6>
@@ -61,11 +61,11 @@
                                                 alt="screenshot">
                                         </div>
                                     </div>
-                                    <div id="skillsSection" class="card-body miniCard card-bottom-radius animated fadeIn">
+                                    <div id="skillsSection" class="card-body miniCard card-bottom-radius ">
                                     </div>
                                 </div>
-                                <div class=" col-lg-6 mb-5">
-                                    <div class="card-top-radius miniCard delay-1s animated fadeIn">
+                                <div class="wow fadeInUp col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard ">
                                         <div class=" p-4">
                                             <h3 class="card-title ">Strengths</h3>
                                             <h6 class="card-subtitle ">My stats</h6>
@@ -75,7 +75,7 @@
                                                 alt="screenshot">
                                         </div>
                                     </div>
-                                    <div id="statsSection" class="card-body miniCard card-bottom-radius delay-1s animated fadeIn">
+                                    <div id="statsSection" class="card-body miniCard card-bottom-radius">
                                         <ul class="no-bullets">
                                             <li class="py-2"><i class="fas fa-bolt fa-2x"></i><span class="px-3">learns
                                                     quickly</span></li>
@@ -92,8 +92,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class=" col-lg-6 mb-5">
-                                    <div class="card-top-radius miniCard delay-2s animated fadeIn">
+                                <div class="wow fadeInUp col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard">
                                         <div class=" p-4">
                                             <h3 class="card-title ">Personality</h3>
                                             <h6 class="card-subtitle ">What makes me special</h6>
@@ -103,7 +103,7 @@
                                                 alt="screenshot">
                                         </div>
                                     </div>
-                                    <div id="bitsSection" class="card-body miniCard card-bottom-radius delay-2s animated fadeIn">
+                                    <div id="bitsSection" class="card-body miniCard card-bottom-radius">
                                         <ul class="no-bullets">
                                             <li class="py-2"><i class="fas fa-heart fa-2x"></i><span class="px-3">L<span
                                                         class="text-success font-weight-bold">G</span>BT</span></li>
@@ -118,8 +118,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class=" col-lg-6 mb-5">
-                                    <div class="card-top-radius miniCard delay-3s animated fadeIn">
+                                <div class="wow fadeInUp col-lg-6 mb-5">
+                                    <div class="card-top-radius miniCard ">
                                         <div class=" p-4">
                                             <h3 class="card-title ">Contact</h3>
                                             <h6 class="card-subtitle ">How to get in touch with me</h6>
@@ -128,7 +128,7 @@
                                             <img src="Assets/Images/portrait.jpg" class="card-img-top" alt="screenshot">
                                         </div>
                                     </div>
-                                    <div id="statsSection" class="card-body miniCard card-bottom-radius delay-3s animated fadeIn">
+                                    <div id="statsSection" class="card-body miniCard card-bottom-radius ">
                                         <div class="mt-3 ">
                                             <ul class="nav">
                                                 <li class="nav-item">
@@ -187,6 +187,9 @@
     </footer>
     <script type="text/Javascript">
 $(document).ready(function () {
+
+new WOW().init();
+
 var skills = [
     {
         skill: "HTML5",
