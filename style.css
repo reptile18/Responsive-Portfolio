@@ -1,5 +1,10 @@
-.card-img-top {
-  max-height: 10em;
+.about-card {
+  max-height: 20em;
+  max-width: 100%;
+  width: auto
+}
+.portfolio-card {
+  max-height: 14em;
   max-width: 100%;
   width: auto
 }
