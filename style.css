@@ -9,12 +9,12 @@ body {
   width: auto
 }
 .portfolio-card {
-  width: 10em;
-  max-height: 10em;
+  width: 20em;
+  max-height: 15em;
   display: block;
 }
 .portfolio-img-container {
-  height: 10em;
+  height: 15em;
   display: flex;
   justify-content: center;
   flex-direction: column;
