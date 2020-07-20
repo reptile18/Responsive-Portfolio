@@ -1,51 +1,84 @@
+body {
+  --purple: #3A1772;
+  --white: #F1E9DA;
+}
+
 .about-card {
   max-height: 20em;
   max-width: 100%;
   width: auto
 }
 .portfolio-card {
-  max-height: 14em;
-  max-width: 100%;
-  width: auto
+  width: 10em;
+  max-height: 10em;
+  display: block;
+}
+.portfolio-img-container {
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.divTechs {
+  height: 2em;
 }
 .card-img-container {
   width: 100%;
 }
+.cardCol {
+  margin-bottom: 30px;
+}
+
+.row .card-radius {
+  border-radius: 5px;
+  border: 1px dashed var(--white);
+}
+
+.card-project-description {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.card .card-body .techBadge {
+  background-color: var(--white);
+  color: var(--purple) !important;
+}
 
 .card-top-radius {
   border-radius: 5px 5px 0 0 ;
-  border: 1px dashed #F1E9DA;
+  border: 1px dashed var(--white);
   border-bottom: none;
 }
 
 .card-bottom-radius {
   border-radius: 0 0 5px 5px;
-  border: 1px dashed #F1E9DA;
+  border: 1px dashed var(--white);
   border-top: none;
 }
 
 .pageBar {
-  background-color: #3A1772;
+  background-color: var(--purple);
   color: #F1E9DA;
 }
 
 .pageBar a {
-  color: #F1E9DA;
+  color: var(--purple);
 }
 
 .mainCard {
   background-color: rgba(0,0,0,0);
-  color: #F1E9DA;
+  color: var(--white);
 
 }
 
 .miniCard {
-  background-color: #3A1772;
-  color: #F1E9DA;
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .miniCard a {
-  color: #F1E9DA;
+  color: var(--white);
 }
 
 .codingBackground {
@@ -74,9 +107,9 @@
 }
 
 .btn-bg-5 {
-  background-color: indigo;
-  border: 1px solid #F1E9DA;
-  color: #F1E9DA;
+  background-color: var(--purple);
+  border: 1px solid var(--white);
+  color: var(--white);
 }
 
 .btn-bg-6 {
@@ -95,11 +128,11 @@
 }
 
 footer {
-  border-top: 1px solid #F1E9DA;
+  border-top: 1px solid var(--white);
 }
 
 nav {
-  border-bottom: 1px solid #F1E9DA;
+  border-bottom: 1px solid var(--white);
 }
 
 .prettyFont {
