@@ -10,8 +10,10 @@ body {
 }
 .portfolio-card {
   width: 20em;
-  max-height: 15em;
+  max-height: 100%;
+  max-width: 100%;
   display: block;
+  padding: 10px;
 }
 .portfolio-img-container {
   height: 15em;
@@ -21,7 +23,7 @@ body {
   align-items: center;
 }
 .divTechs {
-  height: 2em;
+  height: 4em;
 }
 .card-img-container {
   width: 100%;
@@ -30,19 +32,33 @@ body {
   margin-bottom: 30px;
 }
 
+.card-title {
+  font-size: 2em;
+}
+
+.card-subtitle {
+  font-size: 1.5em;
+}
+.card {
+  font-size: 1em;
+}
 .row .card-radius {
   border-radius: 5px;
   border: 1px dashed var(--white);
 }
 
 .card-project-description {
-  font-size: 0.8rem;
+  font-size: 2rem;
   margin-top: 1rem;
 }
 
 .card .card-body .techBadge {
   background-color: var(--white);
   color: var(--purple) !important;
+}
+
+.card {
+  font-size: 1.5em;
 }
 
 .card-top-radius {
@@ -139,12 +155,40 @@ nav {
   font-family: 'Permanent Marker', cursive;
 }
 
-
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+  }
+  .card-title {
+    font-size: 2em;
+  }
+  .card-subtitle {
+    font-size: 1.2em;
+  }
+}
 
 @media (min-width: 1200px) { 
 
 .codingBackground {
   background-image: url("./Assets/Images/codingbackground.png");
+}
+
+.card-project-description {
+  font-size: 0.8rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-subtitle {
+  font-size: 1em;
+}
+.card {
+  font-size: 1.1em;
+}
+.divTechs {
+  height: 2em;
 }
 
 /* Animation Delays */
