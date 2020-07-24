@@ -1,6 +1,7 @@
 body {
   --purple: #3A1772;
   --white: #F1E9DA;
+  --muted-white: #8f8f8f;
 }
 
 .about-card {
@@ -91,6 +92,15 @@ body {
 .miniCard {
   background-color: var(--purple);
   color: var(--white);
+}
+
+.contactCard {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.text-muted {
+  color: var(--muted-white) !important;
 }
 
 .miniCard a {
